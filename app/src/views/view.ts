@@ -1,9 +1,6 @@
 // Essa é a view pai, que passa herança para mensagem-view e negociacoes-view, por isso ela precisa ser do tipo 'T'(genérica)
 // Essa view é feita com métodos para reutilizar, porém, alguns parâmetros são definidos na classe filha
 
-import { inspect } from "../decorators/inspect.js";
-import { logarTempoDeExecucao } from "../decorators/logar-tempo-de-execucao.js";
-
 export abstract class View<T> {
     // Só a própria classe ou as filhas que herdarem dessa classe podem ter acessa às propriedades protegidas
     protected elemento: HTMLElement;
